@@ -1,0 +1,44 @@
+{%extends 'student/base.html'%}
+
+
+{%block body_block%}
+
+<div class="centerstage">
+	<h1>these are the list of students:</h1>
+
+    {%if student_list%}
+	{%for student in student_list%}
+       <ul>
+       	 <li>
+       	 	<h1><a href="{%url 'student_detail' pk=student.pk %}">{{student.name}}</a></h1>
+       	 	
+
+       	 </li>
+
+       	
+
+
+
+       </ul>
+
+
+	{%endfor%}
+
+
+	{%else%}
+	<h3>there is no student in database</h3>
+	{%endif%}
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+{%endblock%}

@@ -1,0 +1,43 @@
+.centerstage
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.display-4
+{
+
+	position: relative;
+	right: 5%;
+}
+
+
+.myfont
+{
+	font-family: 'Russo One', sans-serif;
+	font-size: 20px;
+}
+
+.bigbrand
+{
+	font-size: 36px;
+}
+
+.img-main
+{
+	position: relative;
+	left:60%;
+    height: 200px;
+	display: block;
+}
+
+.detail
+{
+	position: relative;
+	left:60%;
+}
+
+body
+{
+	background-position: center;
+}

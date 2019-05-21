@@ -1,0 +1,62 @@
+{%extends 'student/base.html'%}
+
+{%block body_block%}
+
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-12">
+          <h1 class="display-4">{{student.name}}</h1>
+          
+        </div>
+      </div>
+    </div>
+     
+    <div class="row">
+    	<div class="col-md-8">
+    		<img src="{{student.photo.url}}" alt="" class="img-main img-responsive">
+        <div class="detail">
+            <h3>Rollno: {{student.rollno}}</h3>
+            <h3>Course: {{student.course}}</h3>
+            <h3>Year: {{student.year}}</h3>
+            <h3>Address: {{student.address}}</h3>
+            <h3>Phone no: {{student.phonenumber}}</h3>
+            
+
+
+
+
+        </div>
+    	
+
+    		
+
+    	</div>
+
+    	{%if user.is_authenticated%}
+    	  <a href="{%url 'student_edit' pk=student.pk%}" class="btn btn-primary">Edit</a>
+    	  <a href="{%url 'student_remove' pk=student.pk%}" class="btn btn-primary">Remove </a>
+
+
+
+    	{%endif%}
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+{%endblock%}
